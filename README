@@ -1,0 +1,8 @@
+Comandos para iniciar um projeto no back
+
+npm init -y 
+npm install express dotenv mongoose 
+dotenv - permite criarmos variaveis de ambiente no nosso projeto e não coloca-las diretamente no cóidgo fonte do nosso site
+Ele permite criarmos um arquivo env e usarmos essas variaveis 
+npm install -D nodemon 
+o -D é para que o nodemon apareça dentro do package.json, nodemon serve para facilitar o nosso projeto
