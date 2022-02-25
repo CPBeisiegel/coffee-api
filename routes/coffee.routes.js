@@ -47,7 +47,8 @@ router.patch("/edit-coffee/:id", async (req, res) => {
       { _id: id },
       { ...req.body },
       // colocamos esse para retornar o valor atualizado pois sem ele só atualiza no banco de dados
-      { new: true }
+      // colocar o runValidators para validar o conteudo
+      { new: true, runValidators: true }
     );
 
     return res.status(200).json(updatedCoffee);
