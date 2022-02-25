@@ -63,7 +63,7 @@ router.delete("/delete-order/:orderId", async (req, res) => {
     const order = await OrderModel.findOne({ _id: req.params.orderId });
 
     console.log(order);
-    if (!order) {
+    if (order) {
       return res.status(400).json({ msg: "Ordem não encontrada!" });
     }
 
